@@ -20,13 +20,13 @@
         @php
             if (isset($_GET['adding']) == 'Submit') {
                 $sum = $_GET['number1'] + $_GET['number2'];
-                echo '<h5 style = text-align:center;>' . $sum . '</h5>';
+                echo '<h5  style=color:red;>'. 'The answer is: ' . $sum . '</h5>';
             } elseif (isset($_GET['Substract']) == 'submit') {
                 $sub = $_GET['number1'] - $_GET['number2'];
-                echo '<h5  style=text-align:center;>' . $sub . '</h5>';
+                echo '<h5  style=color:red;>'. 'The answer is: ' . $sub . '</h5>';
             } elseif (isset($_GET['Multiply']) == 'submit') {
                 $mul = $_GET['number1'] * $_GET['number2'];
-                echo '<h5  style=text-align:center;>' . $mul . '</h5>';
+                echo '<h5  style=color:red;>'. 'The answer is: ' . $mul . '</h5>';
             } elseif (isset($_GET['Divide']) == 'submit') {
                 $divi = $_GET['number1'] / $_GET['number2'];
                 echo '<h5  style=color:red;>'. 'The answer is: ' . $divi . '</h5>';
